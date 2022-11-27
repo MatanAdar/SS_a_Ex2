@@ -38,7 +38,8 @@ void Shortest_Path_Algo()
     {
         for(int j=0;j<size;j++)
         {
-            if(mat[i][j]>=(__INT_MAX__)){
+            if(mat[i][j]>=(__INT_MAX__))
+            {
                 mat[i][j]=0;
             }
         }
