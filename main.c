@@ -4,7 +4,7 @@
 int main()
 {
     char WhichFunc;
-    int i,J;
+    int i,j;
 
     if(scanf("%c", &WhichFunc)!=EOF)
     {
