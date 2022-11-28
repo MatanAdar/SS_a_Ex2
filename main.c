@@ -28,5 +28,7 @@ int main()
         scanf("%c", &WhichFunc);
     }
 
+    printf("\n");
     return 0;
+
 }
