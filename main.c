@@ -3,31 +3,33 @@
 
 int main()
 {
-    char WhichFunc=0;
-    int i=0;
-    int j=0;
+    char WhichFunc;
+    int i,J;
 
-    scanf("%c", &WhichFunc);
-
-    while(WhichFunc!= 'D')
+    if(scanf("%c", &WhichFunc)!=EOF)
     {
-        if(WhichFunc=='A')
+        while(WhichFunc!= 'D')
         {
-            A();
+            if(WhichFunc=='A')
+            {
+                A();
+            }
+            if(WhichFunc=='B')
+            {
+                if(scanf("%d %d", &i, &j)!=EOF)
+                    B(i,j);
+            }
+            if(WhichFunc=='C')
+            {
+                if(scanf("%d %d", &i ,&j)!=Eof)
+                    C(i,j);
+            }
+            if(scanf("%c", &WhichFunc)==EOF)
+            {
+            break;
+            }
         }
-        if(WhichFunc=='B')
-        {
-            scanf("%d %d", &i, &j);
-            B(i,j);
-        }
-        if(WhichFunc=='C')
-        {
-            scanf("%d %d", &i ,&j);
-            C(i,j);
-        }
-        scanf("%c", &WhichFunc);
     }
 
     return 0;
-
 }
