@@ -2,7 +2,7 @@
 #include <stdio.h>
 #define size 10
 
-int mat[size][size];
+int mat[size][size] = {0};
 
 int Min(int num1, int num2)
 {
