@@ -1,4 +1,4 @@
-#include "my_math.h"
+#include "my_mat.h"
 #include <stdio.h>
 #define size 10
 
@@ -16,7 +16,7 @@ void Shortest_Path_Algo()
     {
         for(int j=0;j<size;j++)
         {
-            if(i!=j && mat[i][j]==0)
+            if((i!=j) && (mat[i][j]==0))
             {
                 mat[i][j]=(__INT_MAX__);
             }
@@ -30,7 +30,7 @@ void Shortest_Path_Algo()
             for(int j = 0; j<size; j++)
             {
                 int temp = 0;
-                if(mat[i][k] == __INT_MAX__ || mat[k][j] == __INT_MAX__)
+                if((mat[i][k] == __INT_MAX__) || (mat[k][j] == __INT_MAX__))
                 {
                     temp = __INT_MAX__;
                 }

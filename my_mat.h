@@ -1,5 +1,5 @@
-#ifndef my_math_h
-#define my_math_h
+#ifndef my_mat_h
+#define my_mat_h
 
 
 void A();
