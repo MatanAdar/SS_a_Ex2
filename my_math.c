@@ -71,8 +71,6 @@ void A()
 
 void B(int i, int j)
 {
-    Shortest_Path_Algo();
-   
     if(mat[i][j]==0)
     {
         printf("False\n");
@@ -86,7 +84,6 @@ void B(int i, int j)
 
 void C(int i, int j)
 {
-    Shortest_Path_Algo();
     if(mat[i][j]==0)
     {
         printf("-1\n");
