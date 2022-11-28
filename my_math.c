@@ -23,13 +23,22 @@ void Shortest_Path_Algo()
         }
     }
 
-    for(int k=0;k<size;k++)
+     for(int k = 0; k < 10; k++)
     {
-        for(int i=0;i<size;i++)
+        for(int i = 0; i < 10; i++)
         {
-            for(int j=0;j<size;j++)
+            for(int j = 0; j < 10; j++)
             {
-                mat[i][j]=Min(mat[i][j] , mat[i][k]+mat[k][j]);
+                int temp = 0;
+                if(mat[i][k] == __INT_MAX__ || mat[k][j] == __INT_MAX__)
+                {
+                    temp = __INT_MAX__;
+                }
+                else
+                {
+                    temp = mat[i][k] + mat[k][j];
+                }
+                mat[i][j] = Min(mat[i][j], temp);
             }
         }
     }
