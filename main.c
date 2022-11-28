@@ -21,7 +21,7 @@ int main()
             }
             if(WhichFunc=='C')
             {
-                if(scanf("%d %d", &i ,&j)!=Eof)
+                if(scanf("%d %d", &i ,&j)!=EOF)
                     C(i,j);
             }
             if(scanf("%c", &WhichFunc)==EOF)
