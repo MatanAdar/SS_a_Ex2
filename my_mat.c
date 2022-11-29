@@ -61,8 +61,7 @@ void A()
     {
         for(int j=0;j<size;j++)
         {
-            if(scanf("%d",&mat[i][j])==EOF)
-                return;
+            scanf("%d",&mat[i][j]);
         }
     }
 
